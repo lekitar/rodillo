@@ -1,0 +1,210 @@
+@import "tabstyles.css";
+@import "../../fontawesome-free-5.13.0-web/css/all.min.css";
+@import "../fonts/style.css";
+/*Desarrolladores*/
+/* Menu Principal
+*
+**
+***
+****
+*****
+******
+*******
+*/
+#menu-principal {
+  font-family: Poppins;
+  font-weight: 400;
+  background: #e9eaef;
+  border: none;
+}
+#menu-principal #logo-normal {
+  width: 30%;
+}
+#menu-principal .menu-space {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#menu-principal li {
+  margin-left: 30px;
+}
+#menu-principal li a {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  font-size: 18px;
+  font-weight: 200;
+  color: #3c7871;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: transparent;
+}
+#menu-principal li a:after {
+  content: "";
+  border-top: 2px solid;
+  border-top-color: inherit;
+  right: auto;
+  left: 7px;
+  width: 0;
+  position: absolute;
+  transition: width 0.25s ease-out;
+  bottom: 10px;
+}
+#menu-principal li a:hover:after,
+#menu-principal .active a:after {
+  width: calc(90% - 10px);
+  width: -webkit-calc(90% - 10px);
+}
+.footer-bg {
+  background: #3c7871;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.footer-bg ul {
+  list-style: none;
+}
+.footer-bg ul a {
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-bg ul li {
+  margin-bottom: 15px;
+}
+.page-ranking {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  background: #ffffff;
+}
+.tabs-li {
+  padding: 0px;
+}
+.tabs-li a {
+  margin-right: 0px !important;
+}
+.nav-tabs > li > a {
+  border: 0px !important;
+}
+.nav-tabs > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  font-family: poppins;
+  text-align: center;
+  background: white;
+  border-radius: 0;
+  border-bottom: 4px solid transparent !important;
+  border-left: 1px solid #e9eaef !important;
+  margin-left: -1px;
+  color: #3c7871;
+}
+.nav-tabs > li > a:hover {
+  border-bottom: 4px solid #3c7871 !important;
+}
+.nav-tabs > li.active > a {
+  border-bottom: 4px solid #3c7871 !important;
+}
+/* estilos tablas*/
+table.dataTable tbody td {
+  vertical-align: middle !important;
+}
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px 18px;
+  border-bottom: 2px solid #3c7871 !important;
+  vertical-align: middle;
+}
+table.dataTable.no-footer {
+  border-bottom: 2px solid #3c7871 !important;
+  margin-bottom: 15px;
+}
+.tab-pane {
+  animation: fadeIn;
+  /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s;
+  /* don't forget to set a duration! */
+}
+.dataTables_wrapper .dataTables_filter input {
+  padding: 7px 7px 7px 15px;
+  border-radius: 50px;
+  /* border-color: green; */
+  border: 2px solid #3c7871;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+  background: #3c7871 !important;
+  color: #ffffff !important;
+  border: 1px solid #3c7871 !important;
+}
+.dataTables_length select {
+  border-radius: 50px;
+  border: solid 1px #3c7871;
+  padding: 3px 5px 3px 7px;
+}
+.table-hover > tbody > tr:hover {
+  background: #549999;
+  color: #ffffff;
+  border-top-color: #3c7871;
+  border-bottom-color: #3c7871;
+}
+.table-hover > tbody > tr:hover + td {
+  border: 1px solid red !important;
+}
+/* Colores
+*
+**
+***
+****
+*****
+******
+*******
+*/
+body {
+  font-family: Poppins !important;
+  background: #e9eaef;
+}
+/* Menu Principal
+*
+**
+***
+****
+*****
+******
+*******
+*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1390px !important;
+  }
+}
+/* Sombras
+*
+**
+***
+****
+*****
+******
+*******
+*/
+.page {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.card-2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.card-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.card-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+/* Librerias*/
+/* Fonts */
