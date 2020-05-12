@@ -22,9 +22,9 @@
           <li> <a href="#">Quiénes Somos</a></li>
           <li> <a href="#">Blog</a></li>
           <li> <a href="#">Contacto</a></li>
-          <li><a href="#"> <i class="fab fa-twitter"></i> </a></li>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"> <i class="fab fa-instagram"></i></a></li>
+          <li class="hidden-sm hidden-xs"><a href="#"> <i class="fab fa-twitter"></i> </a></li>
+          <li class="hidden-sm hidden-xs"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li class="hidden-sm hidden-xs"><a href="#"> <i class="fab fa-instagram"></i></a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

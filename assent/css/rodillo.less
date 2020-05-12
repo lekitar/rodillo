@@ -13,9 +13,9 @@
 	font-weight: 400;
 	background: @gris;
 	border: none;
-	#logo-normal{
+	/*#logo-normal{
 		width: 30%;
-	}
+	}*/
 
 	.menu-space{
 		padding-top: 20px;
@@ -35,26 +35,50 @@
 	}
 }
 
+@media(max-width: 992px){
+	#menu-principal{
+		li{
+			margin-left: 15px;
+		}
+	}
+	#menu-principal{
+		#logo-normal {
+				width: auto;
+		}
+	}
+}
+@media(max-width: 767px){
+#menu-principal{
+	background: white;
+	.menu-space{
+		padding-top: 7px;
+		padding-bottom: 7px;
+}
+img{
+	padding-left: 15px;
+}
+}
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
 	background: transparent;
 }
 
 #menu-principal li a:after {
-    content: "";
-    border-top: 2px solid;
-    border-top-color: inherit;
-    right: auto;
-    left: 7px;
-    width: 0;
-    position: absolute;
-    transition: width 0.25s ease-out;
-    bottom: 10px;
+	content: "";
+	border-top: 2px solid;
+	border-top-color: inherit;
+	right: auto;
+	left: 7px;
+	width: 0;
+	position: absolute;
+	transition: width 0.25s ease-out;
+	bottom: 10px;
 }
 #menu-principal li a:hover:after, #menu-principal .active a:after{
 
-    width: ~'calc(90% - 10px)';
-    width: ~'-webkit-calc(90% - 10px)';
-    
+	width: ~'calc(90% - 10px)';
+	width: ~'-webkit-calc(90% - 10px)';
+
 }
 
 .footer-bg{
@@ -89,23 +113,23 @@
 	}
 }
 .nav-tabs>li>a {
-border:0px !important;
-	}
-    
+	border:0px !important;
+}
+
 
 
 .nav-tabs>li>a {
 	padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 18px;
-    font-family: poppins;
-    text-align: center;
-    background: white;
-    border-radius: 0;
-    border-bottom: 4px solid transparent !important;
-    border-left: 1px solid @gris !important;
-    margin-left: -1px;
-    color: @verde;
+	padding-bottom: 30px;
+	font-size: 18px;
+	font-family: poppins;
+	text-align: center;
+	background: white;
+	border-radius: 0;
+	border-bottom: 4px solid transparent !important;
+	border-left: 1px solid @gris !important;
+	margin-left: -1px;
+	color: @verde;
 
 }
 
@@ -122,9 +146,9 @@ table.dataTable tbody td {
 }
 
 table.dataTable thead th, table.dataTable thead td {
-    padding: 10px 18px;
-    border-bottom: 2px solid @verde !important;
-    vertical-align: middle;
+	padding: 10px 18px;
+	border-bottom: 2px solid @verde !important;
+	vertical-align: middle;
 }
 table.dataTable.no-footer{
 	border-bottom: 2px solid @verde !important;
@@ -132,26 +156,30 @@ table.dataTable.no-footer{
 }
 
 .tab-pane{
-	 animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 2s; /* don't forget to set a duration! */
+	animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+	animation-duration: 2s; /* don't forget to set a duration! */
+
+}
+.table-responsive{
+	border:none ;
 }
 .dataTables_wrapper .dataTables_filter input{
-	 padding: 7px 7px 7px 15px;
-    border-radius: 50px;
-    /* border-color: green; */
-    border: 2px solid @verde;
+	padding: 7px 7px 7px 15px;
+	border-radius: 50px;
+	/* border-color: green; */
+	border: 2px solid @verde;
 }
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
 	background: @verde !important;
-    color: @blanco !important;
-    border: 1px solid @verde !important;
+	color: @blanco !important;
+	border: 1px solid @verde !important;
 }
 
 .dataTables_length select {
 	border-radius: 50px;
-    border: solid 1px @verde;
-    padding: 3px 5px 3px 7px;
+	border: solid 1px @verde;
+	padding: 3px 5px 3px 7px;
 }
 .table-hover>tbody>tr:hover{
 	background: #549999;
@@ -163,4 +191,13 @@ table.dataTable.no-footer{
 
 .table-hover>tbody>tr:hover + td{
 	border: 1px solid red !important;
+}
+
+.dataTables_paginate{
+	margin-bottom: 20px;
+}
+
+.social-menu li{
+	display: inline;
+	margin-left: 30px;
 }

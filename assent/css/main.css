@@ -14,11 +14,11 @@
 #menu-principal {
   font-family: Poppins;
   font-weight: 400;
-  background: #e9eaef;
+  background: #f4f4f4;
   border: none;
-}
-#menu-principal #logo-normal {
-  width: 30%;
+  /*#logo-normal{
+		width: 30%;
+	}*/
 }
 #menu-principal .menu-space {
   padding-top: 20px;
@@ -33,6 +33,26 @@
   font-size: 18px;
   font-weight: 200;
   color: #3c7871;
+}
+@media (max-width: 992px) {
+  #menu-principal li {
+    margin-left: 15px;
+  }
+  #menu-principal #logo-normal {
+    width: auto;
+  }
+}
+@media (max-width: 767px) {
+  #menu-principal {
+    background: white;
+  }
+  #menu-principal .menu-space {
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+  #menu-principal img {
+    padding-left: 15px;
+  }
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -94,7 +114,7 @@
   background: white;
   border-radius: 0;
   border-bottom: 4px solid transparent !important;
-  border-left: 1px solid #e9eaef !important;
+  border-left: 1px solid #f4f4f4 !important;
   margin-left: -1px;
   color: #3c7871;
 }
@@ -124,6 +144,9 @@ table.dataTable.no-footer {
   animation-duration: 2s;
   /* don't forget to set a duration! */
 }
+.table-responsive {
+  border: none ;
+}
 .dataTables_wrapper .dataTables_filter input {
   padding: 7px 7px 7px 15px;
   border-radius: 50px;
@@ -150,6 +173,13 @@ table.dataTable.no-footer {
 .table-hover > tbody > tr:hover + td {
   border: 1px solid red !important;
 }
+.dataTables_paginate {
+  margin-bottom: 20px;
+}
+.social-menu li {
+  display: inline;
+  margin-left: 30px;
+}
 /* Colores
 *
 **
@@ -161,7 +191,7 @@ table.dataTable.no-footer {
 */
 body {
   font-family: Poppins !important;
-  background: #e9eaef;
+  background: #f4f4f4;
 }
 /* Menu Principal
 *
