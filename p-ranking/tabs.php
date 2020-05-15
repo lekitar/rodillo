@@ -1,5 +1,5 @@
 
-<div class="container-fluid page">
+<div class="container page">
 	<div class="row">
 
 

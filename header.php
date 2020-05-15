@@ -6,6 +6,7 @@
 
 <link rel="stylesheet" href="assent/css/bootstrap.min.css">
 
+
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 <link rel="stylesheet" href="assent/css/main.css">
