@@ -38,6 +38,9 @@
   #menu-principal li {
     margin-left: 15px;
   }
+  #menu-principal a:after {
+    bottom: 5px !important;
+  }
   #menu-principal #logo-normal {
     width: auto;
   }
@@ -45,6 +48,9 @@
 @media (max-width: 767px) {
   #menu-principal {
     background: white;
+  }
+  #menu-principal li {
+    display: table;
   }
   #menu-principal .menu-space {
     padding-top: 7px;
@@ -202,7 +208,7 @@ body {
 ******
 *******
 */
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .container {
     width: 1390px !important;
   }
