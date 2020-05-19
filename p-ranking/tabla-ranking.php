@@ -5,6 +5,7 @@
 
 			<div class="tab-content">
 				<div role="tabpanel" id="general" class="table-responsive tab-pane active">
+					<?php include('p-ranking/filter.php');?>
 					<table id="table-rank" class="table table-hover cellheader" style="padding-top: 30px;">
 						<thead>
 							<tr>
@@ -21,22 +22,23 @@
 									Muertes 
 								</th>
 								<th  width="7%"> 
-									% de Muertes
+								<span data-tippy-content="Muertes entre casos totales">	% de Muertes </span>
 								</th>
 								<th  width="8%"> 
-								<span data-tippy-content="Hospitalizaciones">	Hosp. </span>
+								<span data-tippy-content="Hospitalizados totales">	Hosp. </span>
 								</th>
 								<th  width="8%"> 
 									<span data-tippy-content="% de Hospitalizaciones"> % de Hosp. </span>
 								</th>
 								<th> 
-									Recuperados 
+									<span data-tippy-content="Recuperados"> Recup.  </span>
 								</th>
 								<th> 
-									Pruebas 
+									Pruebas
 								</th>
 								<th> 
-									% de Positivos
+									<span data-tippy-content="Porcentaje de pruebas positivas"> %Pos </span>
+									
 								</th>
 							</tr>
 						</thead>
@@ -166,6 +168,7 @@
 					</table>
 				</div>
 				<div role="tabpanel" id="aumento" class="table-responsive tab-pane ">
+					<?php include('p-ranking/filter.php');?>
 					<table id="table-aumento" class="table table-hover cellheader" style="padding-top: 30px;">
 						<thead>
 							<tr>
@@ -173,12 +176,12 @@
 								<th>Región  </th>
 								<th>Continente  </th>
 								<th>Casos  </th>
-								<th>Día Cero  </th>
-								<th>Muertes en la última semana  </th>
-								<th>Promedio diario de casos en la última semana  </th>
+								<th><span data-tippy-content="Fecha en la que se llegó a 100 casos acumulados">  Día Cero  </span></th>
+								<th><span data-tippy-content="Nuevas muertes confirmadas en los últimos 7 días"> Muertes ult. 7 </span> </th>
+								<th><span data-tippy-content="Promedio diario de nuevos casos en los ultimos 7 dias">Prom. casos ult. 7 </span>  </th>
 								<th>Tendencia  </th>
-								<th>% promedio de aumento diario en la ultima semana  </th>
-								<th>% promedio de aumento diario en los últimos 3 días  </th>
+								<th><span data-tippy-content="Promedio del % de Aumento diario de los últimos 7 días"> Prom. Aumento ult. 7 % </span> </th>
+								<th> <span data-tippy-content="Promedio del % de Aumento diario de los últimos 3 días"> Prom. Aumento ult. 3 %  </span>   </th>
 								<th>Velocidad </th>
 							</tr>
 						</thead>
@@ -256,6 +259,7 @@
 					</table>
 				</div>
 				<div role="tabpanel" id="movilidad" class="table-responsive tab-pane ">
+					<?php include('p-ranking/filter.php');?>
 					<table id="table-movilidad" class="table table-hover cellheader" style="padding-top: 30px;">
 						<thead>
 							<tr>
@@ -263,10 +267,10 @@
 								<th> Región  </th>
 								<th> Continente  </th>
 								<th> Casos  </th>
-								<th> Disminución de Movilidad en total </th>
-								<th> Disminución de Movilidad en la última semana  </th>
-								<th> Primer dia en cuarentena </th>
-								<th> Días cumpliendo cuarentena</th> 
+								<th><span data-tippy-content="Cambio observado en movilidad desde el día cero"> Movilidad </span> </th>
+								<th> <span data-tippy-content="Cambio observado en movilidad en los últimos 7 días"> Movilidad ult. 7  </span> </th>
+								<th><span data-tippy-content="Fecha del primer día con una disminución de 40% o más"> 1er día sin Mov. </span></th>
+								<th> <span data-tippy-content="Días con 40% o más de disminución en movilidad"> Días sin Mov. </span></th> 
 
 							</tr>
 						</thead>
@@ -326,6 +330,7 @@
 					</table>
 				</div>
 				<div role="tabpanel" id="habitantes" class="table-responsive tab-pane ">
+					<?php include('p-ranking/filter.php');?>
 					<table id="table-habitantes" class="table table-hover cellheader" style="padding-top: 30px;">
 						<thead>
 							<tr>
@@ -334,12 +339,12 @@
 								<th> Continente  </th>
 								<th> Casos  </th>
 								<th> Población  </th>
-								<th> Casos / mil hab.  </th>
-								<th> Muertes / mil hab. </th>
-								<th> Recuperados / mil hab. </th> 
-								<th> Pruebas / mil hab.  </th>
-								<th> Casos en la última semana / mil hab.  </th>
-								<th> Muertes en la última semana / mil hab.</th> 
+								<th>  <span data-tippy-content="Casos totales por cada mil habitantes"> Casos / mil hab. </span>  </th>
+								<th> <span data-tippy-content="Muertes totales por cada mil habitantes"> Muertes / mil hab. </span> </th>
+								<th> <span data-tippy-content="Recuperados totales por cada mil habitantes"> Recup. / mil hab. </span> </th> 
+								<th> <span data-tippy-content="Pruebas hechas en los últimos 7 días por cada mil habitantes"> Pruebas ult. 7 / mil hab.  </th>
+								<th> <span data-tippy-content="Casos nuevos en los últimos 7 días por cada mil habitantes"> Casos ult. 7 / mil hab.</span> </th>
+								<th> <span data-tippy-content="Muertes nuevas en los últimos 7 días por cada mil habitantes"> Muertes ult. 7 / mil hab.</span></th> 
 							</tr>
 						</thead>
 						<tbody>
